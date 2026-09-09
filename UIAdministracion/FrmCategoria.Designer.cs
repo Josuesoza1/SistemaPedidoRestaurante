@@ -64,7 +64,7 @@
             this.pnlEncabezado.Controls.Add(this.lblTitulo);
             this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEncabezado.Location = new System.Drawing.Point(0, 0);
-            this.pnlEncabezado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEncabezado.Margin = new System.Windows.Forms.Padding(4);
             this.pnlEncabezado.Name = "pnlEncabezado";
             this.pnlEncabezado.Size = new System.Drawing.Size(797, 86);
             this.pnlEncabezado.TabIndex = 2;
@@ -90,9 +90,9 @@
             this.grpDatosClientes.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDatosClientes.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.grpDatosClientes.Location = new System.Drawing.Point(23, 114);
-            this.grpDatosClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpDatosClientes.Margin = new System.Windows.Forms.Padding(4);
             this.grpDatosClientes.Name = "grpDatosClientes";
-            this.grpDatosClientes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpDatosClientes.Padding = new System.Windows.Forms.Padding(4);
             this.grpDatosClientes.Size = new System.Drawing.Size(367, 210);
             this.grpDatosClientes.TabIndex = 3;
             this.grpDatosClientes.TabStop = false;
@@ -101,7 +101,7 @@
             // txtPapellido
             // 
             this.txtPapellido.Location = new System.Drawing.Point(46, 117);
-            this.txtPapellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPapellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtPapellido.Multiline = true;
             this.txtPapellido.Name = "txtPapellido";
             this.txtPapellido.Size = new System.Drawing.Size(270, 76);
@@ -110,7 +110,7 @@
             // txtPnombre
             // 
             this.txtPnombre.Location = new System.Drawing.Point(118, 41);
-            this.txtPnombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPnombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtPnombre.Name = "txtPnombre";
             this.txtPnombre.Size = new System.Drawing.Size(198, 23);
             this.txtPnombre.TabIndex = 7;
@@ -146,9 +146,9 @@
             this.grpAcciones.Controls.Add(this.btnGuardar);
             this.grpAcciones.ForeColor = System.Drawing.Color.Green;
             this.grpAcciones.Location = new System.Drawing.Point(419, 114);
-            this.grpAcciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpAcciones.Margin = new System.Windows.Forms.Padding(4);
             this.grpAcciones.Name = "grpAcciones";
-            this.grpAcciones.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpAcciones.Padding = new System.Windows.Forms.Padding(4);
             this.grpAcciones.Size = new System.Drawing.Size(356, 210);
             this.grpAcciones.TabIndex = 11;
             this.grpAcciones.TabStop = false;
@@ -160,7 +160,7 @@
             this.btnEliminar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.Red;
             this.btnEliminar.Location = new System.Drawing.Point(194, 85);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(99, 48);
             this.btnEliminar.TabIndex = 7;
@@ -173,7 +173,7 @@
             this.btnEditar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.Olive;
             this.btnEditar.Location = new System.Drawing.Point(62, 85);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(99, 48);
             this.btnEditar.TabIndex = 6;
@@ -186,7 +186,7 @@
             this.btnNuevo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.Purple;
             this.btnNuevo.Location = new System.Drawing.Point(62, 27);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(99, 48);
             this.btnNuevo.TabIndex = 5;
@@ -199,7 +199,7 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnLimpiar.Location = new System.Drawing.Point(62, 148);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(211, 44);
             this.btnLimpiar.TabIndex = 4;
@@ -212,7 +212,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnGuardar.Location = new System.Drawing.Point(194, 27);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(99, 48);
             this.btnGuardar.TabIndex = 1;
@@ -227,9 +227,9 @@
             this.groupBox2.Controls.Add(this.lblBuscar);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox2.Location = new System.Drawing.Point(23, 344);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(469, 52);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
@@ -237,7 +237,7 @@
             // txtTextoBuscar
             // 
             this.txtTextoBuscar.Location = new System.Drawing.Point(113, 18);
-            this.txtTextoBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTextoBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtTextoBuscar.Name = "txtTextoBuscar";
             this.txtTextoBuscar.Size = new System.Drawing.Size(203, 22);
             this.txtTextoBuscar.TabIndex = 9;
@@ -248,7 +248,7 @@
             this.btnBuscar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.Blue;
             this.btnBuscar.Location = new System.Drawing.Point(333, 9);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(119, 38);
             this.btnBuscar.TabIndex = 8;
@@ -272,9 +272,9 @@
             this.grpListadoCliente.Controls.Add(this.dgvCategorias);
             this.grpListadoCliente.ForeColor = System.Drawing.Color.DarkOrchid;
             this.grpListadoCliente.Location = new System.Drawing.Point(23, 414);
-            this.grpListadoCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpListadoCliente.Margin = new System.Windows.Forms.Padding(4);
             this.grpListadoCliente.Name = "grpListadoCliente";
-            this.grpListadoCliente.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpListadoCliente.Padding = new System.Windows.Forms.Padding(4);
             this.grpListadoCliente.Size = new System.Drawing.Size(751, 150);
             this.grpListadoCliente.TabIndex = 13;
             this.grpListadoCliente.TabStop = false;
@@ -289,7 +289,7 @@
             this.ColSnombre});
             this.dgvCategorias.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvCategorias.Location = new System.Drawing.Point(29, 23);
-            this.dgvCategorias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvCategorias.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCategorias.Name = "dgvCategorias";
             this.dgvCategorias.RowHeadersWidth = 62;
             this.dgvCategorias.Size = new System.Drawing.Size(691, 119);
@@ -330,6 +330,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmCategoria";
             this.Text = "FrmCategoria";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmCategoria_FormClosed);
             this.Load += new System.EventHandler(this.FrmCategoria_Load);
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlEncabezado.PerformLayout();

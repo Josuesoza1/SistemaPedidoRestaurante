@@ -35,5 +35,10 @@ namespace SistemaPedidoRestaurante.UIAdministracion
                 MessageBox.Show(ex.Message, "Error de Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void FrmCategoria_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -38,5 +38,10 @@ namespace SistemaPedidoRestaurante.UIAdministracion
         {
             CargarDatos();
         }
+
+        private void FrmRoles_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

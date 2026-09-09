@@ -6,11 +6,7 @@ namespace SistemaPedidoRestaurante
 {
     internal static class Program
     {
-        /// <summary>
-        /// Punto de entrada principal de la aplicación.
-        /// Si ya tienes un Program.cs (el que crea Visual Studio por defecto),
-        /// solo cambia "new Form1()" por "new FrmLogin()".
-        /// </summary>
+
         [STAThread]
         static void Main()
         {

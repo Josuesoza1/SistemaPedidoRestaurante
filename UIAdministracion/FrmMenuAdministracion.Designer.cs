@@ -46,7 +46,7 @@
             this.pnlEncabezado.Controls.Add(this.lblTitulo);
             this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEncabezado.Location = new System.Drawing.Point(0, 0);
-            this.pnlEncabezado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEncabezado.Margin = new System.Windows.Forms.Padding(4);
             this.pnlEncabezado.Name = "pnlEncabezado";
             this.pnlEncabezado.Size = new System.Drawing.Size(649, 86);
             this.pnlEncabezado.TabIndex = 1;
@@ -70,12 +70,13 @@
             this.btnSalir.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.Purple;
             this.btnSalir.Location = new System.Drawing.Point(147, 243);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(283, 48);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnEmpleados
             // 
@@ -83,7 +84,7 @@
             this.btnEmpleados.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpleados.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnEmpleados.Location = new System.Drawing.Point(225, 187);
-            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(126, 48);
             this.btnEmpleados.TabIndex = 7;
@@ -97,7 +98,7 @@
             this.btnProductos.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductos.ForeColor = System.Drawing.Color.Olive;
             this.btnProductos.Location = new System.Drawing.Point(225, 79);
-            this.btnProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProductos.Margin = new System.Windows.Forms.Padding(4);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(126, 48);
             this.btnProductos.TabIndex = 8;
@@ -111,7 +112,7 @@
             this.btnCategorias.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategorias.ForeColor = System.Drawing.Color.Red;
             this.btnCategorias.Location = new System.Drawing.Point(225, 23);
-            this.btnCategorias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCategorias.Margin = new System.Windows.Forms.Padding(4);
             this.btnCategorias.Name = "btnCategorias";
             this.btnCategorias.Size = new System.Drawing.Size(126, 48);
             this.btnCategorias.TabIndex = 9;
@@ -125,7 +126,7 @@
             this.btnRoles.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoles.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnRoles.Location = new System.Drawing.Point(225, 135);
-            this.btnRoles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRoles.Margin = new System.Windows.Forms.Padding(4);
             this.btnRoles.Name = "btnRoles";
             this.btnRoles.Size = new System.Drawing.Size(126, 44);
             this.btnRoles.TabIndex = 10;
@@ -143,9 +144,9 @@
             this.groupBox2.Controls.Add(this.btnProductos);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox2.Location = new System.Drawing.Point(12, 94);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(626, 316);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;

@@ -78,7 +78,6 @@
             this.label1.Size = new System.Drawing.Size(160, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "INICIAR SESIÓN";
-            
             // 
             // grpAcciones
             // 
@@ -188,6 +187,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmLogin";
             this.Text = "FrmLogin";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmLogin_FormClosed);
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlEncabezado.PerformLayout();
             this.grpAcciones.ResumeLayout(false);

@@ -23,6 +23,7 @@ namespace SistemaPedidoRestaurante.Loggin
                 string usuario = txtUsuario.Text.Trim();
                 string contrasena = txtContrasena.Text.Trim();
 
+                
                 Usuario usuarioLogueado = _usuarioBLL.IniciarSesion(usuario, contrasena);
 
                 if (usuarioLogueado.IdRol == 1)
@@ -65,6 +66,11 @@ namespace SistemaPedidoRestaurante.Loggin
             FrmCrearCuenta ventanaPrincipal = new FrmCrearCuenta();
             ventanaPrincipal.Show();
             this.Hide();
+        }
+
+        private void FrmLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

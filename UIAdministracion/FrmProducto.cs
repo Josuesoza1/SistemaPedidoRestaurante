@@ -26,5 +26,10 @@ namespace SistemaPedidoRestaurante.UIAdministracion
         {
 
         }
+
+        private void FrmProducto_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

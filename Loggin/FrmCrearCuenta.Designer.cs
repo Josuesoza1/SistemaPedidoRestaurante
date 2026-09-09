@@ -401,6 +401,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmCrearCuenta";
             this.Text = "FrmCrearCuenta";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmCrearCuenta_FormClosed);
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlEncabezado.PerformLayout();
             this.grpDatosClientes.ResumeLayout(false);

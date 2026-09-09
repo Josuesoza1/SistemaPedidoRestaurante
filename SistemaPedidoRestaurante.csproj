@@ -46,23 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bobj\Cliente.cs" />
-    <Compile Include="Bobj\Clientes.cs" />
-    <Compile Include="Bobj\DetallePedido.cs" />
-    <Compile Include="Bobj\DetallePedidos.cs" />
-    <Compile Include="Bobj\Factura.cs" />
-    <Compile Include="Bobj\Facturas.cs" />
-    <Compile Include="Bobj\Mesa.cs" />
-    <Compile Include="Bobj\Mesas.cs" />
-    <Compile Include="Bobj\Pago.cs" />
-    <Compile Include="Bobj\Pagos.cs" />
-    <Compile Include="Bobj\Pedido.cs" />
-    <Compile Include="Bobj\Pedidos.cs" />
-    <Compile Include="Bobj\Producto.cs" />
-    <Compile Include="Bobj\Productos.cs" />
-    <Compile Include="Bobj\Reservacion.cs" />
-    <Compile Include="Bobj\Reservaciones.cs" />
-    <Compile Include="Conexion\ConexionBD.cs" />
     <Compile Include="Loggin\FrmCrearCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,7 +96,6 @@
     <Compile Include="UIAdministracion\FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="UsuarioValidacion.cs" />
     <EmbeddedResource Include="Loggin\FrmCrearCuenta.resx">
       <DependentUpon>FrmCrearCuenta.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,7 +143,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Conexion\DataSet\" />
+    <Folder Include="Bobj\" />
+    <Folder Include="Conexion\" />
     <Folder Include="UIEmpleado\" />
     <Folder Include="UIPrincipal\" />
   </ItemGroup>
