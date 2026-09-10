@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaPedidoRestaurante.UIAdministracion;
+using SistemaPedidoRestaurante.UICliente;
 
 namespace SistemaPedidoRestaurante.UIAdministracion
 {
@@ -54,7 +55,14 @@ namespace SistemaPedidoRestaurante.UIAdministracion
 
         private void FrmMenuAdministracion_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmClientes clientes = new FrmClientes();
+            clientes.Show();
+            this.Hide();
         }
     }
 }

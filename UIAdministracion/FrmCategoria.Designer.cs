@@ -310,6 +310,7 @@
             this.dgvCategorias.Location = new System.Drawing.Point(29, 23);
             this.dgvCategorias.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCategorias.Name = "dgvCategorias";
+            this.dgvCategorias.ReadOnly = true;
             this.dgvCategorias.RowHeadersWidth = 62;
             this.dgvCategorias.Size = new System.Drawing.Size(691, 119);
             this.dgvCategorias.TabIndex = 0;
@@ -319,6 +320,7 @@
             this.ColID.HeaderText = "ID";
             this.ColID.MinimumWidth = 8;
             this.ColID.Name = "ColID";
+            this.ColID.ReadOnly = true;
             this.ColID.Width = 150;
             // 
             // ColPnombre
@@ -326,6 +328,7 @@
             this.ColPnombre.HeaderText = "Nombre";
             this.ColPnombre.MinimumWidth = 8;
             this.ColPnombre.Name = "ColPnombre";
+            this.ColPnombre.ReadOnly = true;
             this.ColPnombre.Width = 150;
             // 
             // ColSnombre
@@ -333,6 +336,7 @@
             this.ColSnombre.HeaderText = "Descripción";
             this.ColSnombre.MinimumWidth = 8;
             this.ColSnombre.Name = "ColSnombre";
+            this.ColSnombre.ReadOnly = true;
             this.ColSnombre.Width = 150;
             // 
             // FrmCategoria

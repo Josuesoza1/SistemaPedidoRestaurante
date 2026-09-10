@@ -172,9 +172,10 @@
             this.ColSapellido,
             this.Colcedula});
             this.dgvProductos.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvProductos.Location = new System.Drawing.Point(29, 23);
+            this.dgvProductos.Location = new System.Drawing.Point(30, 24);
             this.dgvProductos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvProductos.Name = "dgvProductos";
+            this.dgvProductos.ReadOnly = true;
             this.dgvProductos.RowHeadersWidth = 62;
             this.dgvProductos.Size = new System.Drawing.Size(857, 119);
             this.dgvProductos.TabIndex = 0;
@@ -184,6 +185,7 @@
             this.ColID.HeaderText = "ID";
             this.ColID.MinimumWidth = 8;
             this.ColID.Name = "ColID";
+            this.ColID.ReadOnly = true;
             this.ColID.Width = 150;
             // 
             // ColPnombre
@@ -191,6 +193,7 @@
             this.ColPnombre.HeaderText = "Categoría";
             this.ColPnombre.MinimumWidth = 8;
             this.ColPnombre.Name = "ColPnombre";
+            this.ColPnombre.ReadOnly = true;
             this.ColPnombre.Width = 150;
             // 
             // ColSnombre
@@ -198,6 +201,7 @@
             this.ColSnombre.HeaderText = "Nombre";
             this.ColSnombre.MinimumWidth = 8;
             this.ColSnombre.Name = "ColSnombre";
+            this.ColSnombre.ReadOnly = true;
             this.ColSnombre.Width = 150;
             // 
             // ColPapellido
@@ -205,6 +209,7 @@
             this.ColPapellido.HeaderText = "Precio";
             this.ColPapellido.MinimumWidth = 8;
             this.ColPapellido.Name = "ColPapellido";
+            this.ColPapellido.ReadOnly = true;
             this.ColPapellido.Width = 150;
             // 
             // ColSapellido
@@ -212,6 +217,7 @@
             this.ColSapellido.HeaderText = "Código";
             this.ColSapellido.MinimumWidth = 8;
             this.ColSapellido.Name = "ColSapellido";
+            this.ColSapellido.ReadOnly = true;
             this.ColSapellido.Width = 150;
             // 
             // Colcedula
@@ -219,6 +225,7 @@
             this.Colcedula.HeaderText = "Disponible";
             this.Colcedula.MinimumWidth = 8;
             this.Colcedula.Name = "Colcedula";
+            this.Colcedula.ReadOnly = true;
             this.Colcedula.Width = 150;
             // 
             // grpAcciones
@@ -446,6 +453,7 @@
             this.Name = "FrmProducto";
             this.Text = "Gestión de Productos";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmProducto_FormClosed);
+            this.Load += new System.EventHandler(this.FrmProducto_Load_1);
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlEncabezado.PerformLayout();
             this.groupBox2.ResumeLayout(false);

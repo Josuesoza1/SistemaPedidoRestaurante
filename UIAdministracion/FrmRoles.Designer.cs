@@ -306,9 +306,10 @@
             this.ColSnombre,
             this.Colcedula});
             this.dgvRoles.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvRoles.Location = new System.Drawing.Point(29, 23);
+            this.dgvRoles.Location = new System.Drawing.Point(28, 23);
             this.dgvRoles.Margin = new System.Windows.Forms.Padding(4);
             this.dgvRoles.Name = "dgvRoles";
+            this.dgvRoles.ReadOnly = true;
             this.dgvRoles.RowHeadersWidth = 62;
             this.dgvRoles.Size = new System.Drawing.Size(457, 119);
             this.dgvRoles.TabIndex = 0;
@@ -318,6 +319,7 @@
             this.ColID.HeaderText = "ID";
             this.ColID.MinimumWidth = 8;
             this.ColID.Name = "ColID";
+            this.ColID.ReadOnly = true;
             this.ColID.Width = 150;
             // 
             // ColSnombre
@@ -325,6 +327,7 @@
             this.ColSnombre.HeaderText = "Nombre";
             this.ColSnombre.MinimumWidth = 8;
             this.ColSnombre.Name = "ColSnombre";
+            this.ColSnombre.ReadOnly = true;
             this.ColSnombre.Width = 150;
             // 
             // Colcedula
@@ -332,6 +335,7 @@
             this.Colcedula.HeaderText = "Descripción";
             this.Colcedula.MinimumWidth = 8;
             this.Colcedula.Name = "Colcedula";
+            this.Colcedula.ReadOnly = true;
             this.Colcedula.Width = 150;
             // 
             // FrmRoles

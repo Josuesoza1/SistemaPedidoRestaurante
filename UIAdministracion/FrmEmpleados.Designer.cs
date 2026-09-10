@@ -496,7 +496,7 @@
             this.ColCedula,
             this.ColTelefono});
             this.dgvEmpleados.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvEmpleados.Location = new System.Drawing.Point(24, 23);
+            this.dgvEmpleados.Location = new System.Drawing.Point(24, 24);
             this.dgvEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEmpleados.Name = "dgvEmpleados";
             this.dgvEmpleados.ReadOnly = true;

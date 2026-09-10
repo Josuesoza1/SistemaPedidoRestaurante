@@ -82,7 +82,7 @@
             this.pnlEncabezado.Controls.Add(this.lblTitulo);
             this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEncabezado.Location = new System.Drawing.Point(0, 0);
-            this.pnlEncabezado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEncabezado.Margin = new System.Windows.Forms.Padding(4);
             this.pnlEncabezado.Name = "pnlEncabezado";
             this.pnlEncabezado.Size = new System.Drawing.Size(1231, 86);
             this.pnlEncabezado.TabIndex = 0;
@@ -118,9 +118,9 @@
             this.grpDatosClientes.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDatosClientes.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.grpDatosClientes.Location = new System.Drawing.Point(41, 94);
-            this.grpDatosClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpDatosClientes.Margin = new System.Windows.Forms.Padding(4);
             this.grpDatosClientes.Name = "grpDatosClientes";
-            this.grpDatosClientes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpDatosClientes.Padding = new System.Windows.Forms.Padding(4);
             this.grpDatosClientes.Size = new System.Drawing.Size(763, 210);
             this.grpDatosClientes.TabIndex = 1;
             this.grpDatosClientes.TabStop = false;
@@ -129,7 +129,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(483, 122);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(197, 23);
             this.txtEmail.TabIndex = 13;
@@ -137,7 +137,7 @@
             // txtSnombre
             // 
             this.txtSnombre.Location = new System.Drawing.Point(188, 78);
-            this.txtSnombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSnombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtSnombre.Name = "txtSnombre";
             this.txtSnombre.Size = new System.Drawing.Size(197, 23);
             this.txtSnombre.TabIndex = 12;
@@ -145,7 +145,7 @@
             // txtCedula
             // 
             this.txtCedula.Location = new System.Drawing.Point(496, 39);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(4);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(197, 23);
             this.txtCedula.TabIndex = 11;
@@ -153,7 +153,7 @@
             // txtSapellido
             // 
             this.txtSapellido.Location = new System.Drawing.Point(188, 159);
-            this.txtSapellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSapellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtSapellido.Name = "txtSapellido";
             this.txtSapellido.Size = new System.Drawing.Size(197, 23);
             this.txtSapellido.TabIndex = 10;
@@ -161,7 +161,7 @@
             // txtPapellido
             // 
             this.txtPapellido.Location = new System.Drawing.Point(188, 122);
-            this.txtPapellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPapellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtPapellido.Name = "txtPapellido";
             this.txtPapellido.Size = new System.Drawing.Size(197, 23);
             this.txtPapellido.TabIndex = 9;
@@ -169,7 +169,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(496, 81);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(197, 23);
             this.txtTelefono.TabIndex = 8;
@@ -177,7 +177,7 @@
             // txtPnombre
             // 
             this.txtPnombre.Location = new System.Drawing.Point(188, 39);
-            this.txtPnombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPnombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtPnombre.Name = "txtPnombre";
             this.txtPnombre.Size = new System.Drawing.Size(197, 23);
             this.txtPnombre.TabIndex = 7;
@@ -247,7 +247,6 @@
             this.lblSnombre.Size = new System.Drawing.Size(133, 16);
             this.lblSnombre.TabIndex = 1;
             this.lblSnombre.Text = "Segundo Nombre:";
-            this.lblSnombre.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblPnombre
             // 
@@ -270,14 +269,13 @@
             this.grpAcciones.Controls.Add(this.btnGuardar);
             this.grpAcciones.ForeColor = System.Drawing.Color.Green;
             this.grpAcciones.Location = new System.Drawing.Point(843, 94);
-            this.grpAcciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpAcciones.Margin = new System.Windows.Forms.Padding(4);
             this.grpAcciones.Name = "grpAcciones";
-            this.grpAcciones.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpAcciones.Padding = new System.Windows.Forms.Padding(4);
             this.grpAcciones.Size = new System.Drawing.Size(356, 210);
             this.grpAcciones.TabIndex = 2;
             this.grpAcciones.TabStop = false;
             this.grpAcciones.Text = "Acciones";
-            this.grpAcciones.Enter += new System.EventHandler(this.grpAcciones_Enter);
             // 
             // btnVolver
             // 
@@ -285,7 +283,7 @@
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnVolver.Location = new System.Drawing.Point(193, 149);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(99, 41);
             this.btnVolver.TabIndex = 5;
@@ -298,7 +296,7 @@
             this.btnEliminar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.Red;
             this.btnEliminar.Location = new System.Drawing.Point(193, 85);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(99, 48);
             this.btnEliminar.TabIndex = 7;
@@ -311,7 +309,7 @@
             this.btnEditar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.Olive;
             this.btnEditar.Location = new System.Drawing.Point(63, 85);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(99, 48);
             this.btnEditar.TabIndex = 6;
@@ -324,7 +322,7 @@
             this.btnNuevo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.Purple;
             this.btnNuevo.Location = new System.Drawing.Point(63, 27);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(99, 48);
             this.btnNuevo.TabIndex = 5;
@@ -337,7 +335,7 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnLimpiar.Location = new System.Drawing.Point(63, 148);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(99, 44);
             this.btnLimpiar.TabIndex = 4;
@@ -350,7 +348,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnGuardar.Location = new System.Drawing.Point(193, 27);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(99, 48);
             this.btnGuardar.TabIndex = 1;
@@ -362,9 +360,9 @@
             this.grpListadoCliente.Controls.Add(this.dgvClientes);
             this.grpListadoCliente.ForeColor = System.Drawing.Color.DarkOrchid;
             this.grpListadoCliente.Location = new System.Drawing.Point(41, 418);
-            this.grpListadoCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpListadoCliente.Margin = new System.Windows.Forms.Padding(4);
             this.grpListadoCliente.Name = "grpListadoCliente";
-            this.grpListadoCliente.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpListadoCliente.Padding = new System.Windows.Forms.Padding(4);
             this.grpListadoCliente.Size = new System.Drawing.Size(1157, 150);
             this.grpListadoCliente.TabIndex = 3;
             this.grpListadoCliente.TabStop = false;
@@ -384,8 +382,9 @@
             this.ColEmail});
             this.dgvClientes.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvClientes.Location = new System.Drawing.Point(29, 23);
-            this.dgvClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(4);
             this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.ReadOnly = true;
             this.dgvClientes.RowHeadersWidth = 51;
             this.dgvClientes.Size = new System.Drawing.Size(1104, 119);
             this.dgvClientes.TabIndex = 0;
@@ -395,6 +394,7 @@
             this.ColID.HeaderText = "ID";
             this.ColID.MinimumWidth = 6;
             this.ColID.Name = "ColID";
+            this.ColID.ReadOnly = true;
             this.ColID.Width = 125;
             // 
             // ColPnombre
@@ -402,6 +402,7 @@
             this.ColPnombre.HeaderText = "Primer Nomre";
             this.ColPnombre.MinimumWidth = 6;
             this.ColPnombre.Name = "ColPnombre";
+            this.ColPnombre.ReadOnly = true;
             this.ColPnombre.Width = 125;
             // 
             // ColSnombre
@@ -409,6 +410,7 @@
             this.ColSnombre.HeaderText = "Segundo Nombre";
             this.ColSnombre.MinimumWidth = 6;
             this.ColSnombre.Name = "ColSnombre";
+            this.ColSnombre.ReadOnly = true;
             this.ColSnombre.Width = 125;
             // 
             // ColPapellido
@@ -416,6 +418,7 @@
             this.ColPapellido.HeaderText = "Primer Apellido";
             this.ColPapellido.MinimumWidth = 6;
             this.ColPapellido.Name = "ColPapellido";
+            this.ColPapellido.ReadOnly = true;
             this.ColPapellido.Width = 125;
             // 
             // ColSapellido
@@ -423,6 +426,7 @@
             this.ColSapellido.HeaderText = "Segundo Apellido";
             this.ColSapellido.MinimumWidth = 6;
             this.ColSapellido.Name = "ColSapellido";
+            this.ColSapellido.ReadOnly = true;
             this.ColSapellido.Width = 125;
             // 
             // Colcedula
@@ -430,6 +434,7 @@
             this.Colcedula.HeaderText = "Cedula";
             this.Colcedula.MinimumWidth = 6;
             this.Colcedula.Name = "Colcedula";
+            this.Colcedula.ReadOnly = true;
             this.Colcedula.Width = 125;
             // 
             // ColTelefono
@@ -437,6 +442,7 @@
             this.ColTelefono.HeaderText = "Telefono";
             this.ColTelefono.MinimumWidth = 6;
             this.ColTelefono.Name = "ColTelefono";
+            this.ColTelefono.ReadOnly = true;
             this.ColTelefono.Width = 125;
             // 
             // ColEmail
@@ -444,6 +450,7 @@
             this.ColEmail.HeaderText = "Email";
             this.ColEmail.MinimumWidth = 6;
             this.ColEmail.Name = "ColEmail";
+            this.ColEmail.ReadOnly = true;
             this.ColEmail.Width = 125;
             // 
             // groupBox2
@@ -456,9 +463,9 @@
             this.groupBox2.Controls.Add(this.lblBuscar);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox2.Location = new System.Drawing.Point(196, 336);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(763, 52);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
@@ -466,7 +473,7 @@
             // txtTextoBuscar
             // 
             this.txtTextoBuscar.Location = new System.Drawing.Point(419, 15);
-            this.txtTextoBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTextoBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtTextoBuscar.Name = "txtTextoBuscar";
             this.txtTextoBuscar.Size = new System.Drawing.Size(147, 22);
             this.txtTextoBuscar.TabIndex = 9;
@@ -477,7 +484,7 @@
             this.btnBuscar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.Blue;
             this.btnBuscar.Location = new System.Drawing.Point(621, 9);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(119, 38);
             this.btnBuscar.TabIndex = 8;
@@ -488,7 +495,7 @@
             // 
             this.cmbBuscar.FormattingEnabled = true;
             this.cmbBuscar.Location = new System.Drawing.Point(115, 15);
-            this.cmbBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.cmbBuscar.Name = "cmbBuscar";
             this.cmbBuscar.Size = new System.Drawing.Size(160, 24);
             this.cmbBuscar.TabIndex = 7;
@@ -528,10 +535,11 @@
             this.Controls.Add(this.grpListadoCliente);
             this.Controls.Add(this.grpDatosClientes);
             this.Controls.Add(this.pnlEncabezado);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmClientes";
             this.Text = "Gestion de clientes";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmClientes_FormClosed);
+            this.Load += new System.EventHandler(this.FrmClientes_Load);
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlEncabezado.PerformLayout();
             this.grpDatosClientes.ResumeLayout(false);

@@ -14,10 +14,7 @@ namespace SistemaPedidoRestaurante.UIAdministracion
             InitializeComponent();
         }
 
-        private void FrmProducto_Load(object sender, EventArgs e)
-        {
-            CargarDatos();
-        }
+        
 
         private void CargarDatos()
         {
@@ -49,6 +46,11 @@ namespace SistemaPedidoRestaurante.UIAdministracion
         private void FrmProducto_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void FrmProducto_Load_1(object sender, EventArgs e)
+        {
+            CargarDatos();
         }
     }
 }
