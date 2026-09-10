@@ -26,6 +26,9 @@ namespace SistemaPedidoRestaurante.UIAdministracion
                 dgvEmpleados.Columns[3].DataPropertyName = "PrimerApellido";
                 dgvEmpleados.Columns[4].DataPropertyName = "SegundoApellido";
                 dgvEmpleados.Columns[5].DataPropertyName = "Cargo";
+                dgvEmpleados.Columns[6].DataPropertyName = "Genero";
+                dgvEmpleados.Columns[7].DataPropertyName = "Cedula";
+                dgvEmpleados.Columns[8].DataPropertyName = "Telefono";
                 dgvEmpleados.DataSource = _empleadoBLL.ObtenerEmpleados();
             }
             catch (Exception ex)

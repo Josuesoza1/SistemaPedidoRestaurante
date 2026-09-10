@@ -31,16 +31,6 @@
             this.pnlEncabezado = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.grpListadoCliente = new System.Windows.Forms.GroupBox();
-            this.dgvEmpleados = new System.Windows.Forms.DataGridView();
-            this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColPnombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColSnombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColPapellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColSapellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpAcciones = new System.Windows.Forms.GroupBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -72,13 +62,23 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.dgvEmpleados = new System.Windows.Forms.DataGridView();
+            this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColPnombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColSnombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColPapellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColSapellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColCargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColGenero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColCedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlEncabezado.SuspendLayout();
             this.grpListadoCliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.grpAcciones.SuspendLayout();
             this.grpDatosClientes.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlEncabezado
@@ -116,90 +116,6 @@
             this.grpListadoCliente.TabIndex = 7;
             this.grpListadoCliente.TabStop = false;
             this.grpListadoCliente.Text = "Listado de Empleados";
-            // 
-            // dgvEmpleados
-            // 
-            this.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmpleados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColID,
-            this.ColPnombre,
-            this.ColSnombre,
-            this.ColPapellido,
-            this.ColSapellido,
-            this.Rol,
-            this.Column1,
-            this.Column2,
-            this.ColTelefono});
-            this.dgvEmpleados.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvEmpleados.Location = new System.Drawing.Point(24, 23);
-            this.dgvEmpleados.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvEmpleados.Name = "dgvEmpleados";
-            this.dgvEmpleados.RowHeadersWidth = 62;
-            this.dgvEmpleados.Size = new System.Drawing.Size(1104, 119);
-            this.dgvEmpleados.TabIndex = 0;
-            // 
-            // ColID
-            // 
-            this.ColID.HeaderText = "ID";
-            this.ColID.MinimumWidth = 8;
-            this.ColID.Name = "ColID";
-            this.ColID.Width = 150;
-            // 
-            // ColPnombre
-            // 
-            this.ColPnombre.HeaderText = "Primer Nombre";
-            this.ColPnombre.MinimumWidth = 8;
-            this.ColPnombre.Name = "ColPnombre";
-            this.ColPnombre.Width = 150;
-            // 
-            // ColSnombre
-            // 
-            this.ColSnombre.HeaderText = "Segundo Nombre";
-            this.ColSnombre.MinimumWidth = 8;
-            this.ColSnombre.Name = "ColSnombre";
-            this.ColSnombre.Width = 150;
-            // 
-            // ColPapellido
-            // 
-            this.ColPapellido.HeaderText = "Primer Apellido";
-            this.ColPapellido.MinimumWidth = 8;
-            this.ColPapellido.Name = "ColPapellido";
-            this.ColPapellido.Width = 150;
-            // 
-            // ColSapellido
-            // 
-            this.ColSapellido.HeaderText = "Segundo Apellido";
-            this.ColSapellido.MinimumWidth = 8;
-            this.ColSapellido.Name = "ColSapellido";
-            this.ColSapellido.Width = 150;
-            // 
-            // Rol
-            // 
-            this.Rol.HeaderText = "Rol";
-            this.Rol.MinimumWidth = 8;
-            this.Rol.Name = "Rol";
-            this.Rol.Width = 150;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Usuario";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Teléfono";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // ColTelefono
-            // 
-            this.ColTelefono.HeaderText = "Estado";
-            this.ColTelefono.MinimumWidth = 8;
-            this.ColTelefono.Name = "ColTelefono";
-            this.ColTelefono.Width = 150;
             // 
             // grpAcciones
             // 
@@ -566,6 +482,100 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Rol:";
             // 
+            // dgvEmpleados
+            // 
+            this.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmpleados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColID,
+            this.ColPnombre,
+            this.ColSnombre,
+            this.ColPapellido,
+            this.ColSapellido,
+            this.ColCargo,
+            this.ColGenero,
+            this.ColCedula,
+            this.ColTelefono});
+            this.dgvEmpleados.GridColor = System.Drawing.SystemColors.AppWorkspace;
+            this.dgvEmpleados.Location = new System.Drawing.Point(24, 23);
+            this.dgvEmpleados.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvEmpleados.Name = "dgvEmpleados";
+            this.dgvEmpleados.ReadOnly = true;
+            this.dgvEmpleados.RowHeadersWidth = 62;
+            this.dgvEmpleados.Size = new System.Drawing.Size(1104, 119);
+            this.dgvEmpleados.TabIndex = 0;
+            // 
+            // ColID
+            // 
+            this.ColID.HeaderText = "ID";
+            this.ColID.MinimumWidth = 8;
+            this.ColID.Name = "ColID";
+            this.ColID.ReadOnly = true;
+            this.ColID.Width = 150;
+            // 
+            // ColPnombre
+            // 
+            this.ColPnombre.HeaderText = "Primer Nombre";
+            this.ColPnombre.MinimumWidth = 8;
+            this.ColPnombre.Name = "ColPnombre";
+            this.ColPnombre.ReadOnly = true;
+            this.ColPnombre.Width = 150;
+            // 
+            // ColSnombre
+            // 
+            this.ColSnombre.HeaderText = "Segundo Nombre";
+            this.ColSnombre.MinimumWidth = 8;
+            this.ColSnombre.Name = "ColSnombre";
+            this.ColSnombre.ReadOnly = true;
+            this.ColSnombre.Width = 150;
+            // 
+            // ColPapellido
+            // 
+            this.ColPapellido.HeaderText = "Primer Apellido";
+            this.ColPapellido.MinimumWidth = 8;
+            this.ColPapellido.Name = "ColPapellido";
+            this.ColPapellido.ReadOnly = true;
+            this.ColPapellido.Width = 150;
+            // 
+            // ColSapellido
+            // 
+            this.ColSapellido.HeaderText = "Segundo Apellido";
+            this.ColSapellido.MinimumWidth = 8;
+            this.ColSapellido.Name = "ColSapellido";
+            this.ColSapellido.ReadOnly = true;
+            this.ColSapellido.Width = 150;
+            // 
+            // ColCargo
+            // 
+            this.ColCargo.HeaderText = "Cargo";
+            this.ColCargo.MinimumWidth = 8;
+            this.ColCargo.Name = "ColCargo";
+            this.ColCargo.ReadOnly = true;
+            this.ColCargo.Width = 150;
+            // 
+            // ColGenero
+            // 
+            this.ColGenero.HeaderText = "Genero";
+            this.ColGenero.MinimumWidth = 8;
+            this.ColGenero.Name = "ColGenero";
+            this.ColGenero.ReadOnly = true;
+            this.ColGenero.Width = 150;
+            // 
+            // ColCedula
+            // 
+            this.ColCedula.HeaderText = "Cedula";
+            this.ColCedula.MinimumWidth = 8;
+            this.ColCedula.Name = "ColCedula";
+            this.ColCedula.ReadOnly = true;
+            this.ColCedula.Width = 150;
+            // 
+            // ColTelefono
+            // 
+            this.ColTelefono.HeaderText = "Telefono";
+            this.ColTelefono.MinimumWidth = 8;
+            this.ColTelefono.Name = "ColTelefono";
+            this.ColTelefono.ReadOnly = true;
+            this.ColTelefono.Width = 150;
+            // 
             // FrmEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -586,7 +596,6 @@
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlEncabezado.PerformLayout();
             this.grpListadoCliente.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             this.grpAcciones.ResumeLayout(false);
             this.grpDatosClientes.ResumeLayout(false);
             this.grpDatosClientes.PerformLayout();
@@ -594,6 +603,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -603,7 +613,6 @@
         private System.Windows.Forms.Panel pnlEncabezado;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.GroupBox grpListadoCliente;
-        private System.Windows.Forms.DataGridView dgvEmpleados;
         private System.Windows.Forms.GroupBox grpAcciones;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
@@ -621,15 +630,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblSnombre;
         private System.Windows.Forms.Label lblPnombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColPnombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColSnombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColPapellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColSapellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColTelefono;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtTextoBuscar;
         private System.Windows.Forms.Button btnBuscar;
@@ -644,5 +644,15 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.DataGridView dgvEmpleados;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColPnombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColSnombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColPapellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColSapellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColCargo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColGenero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColCedula;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColTelefono;
     }
 }
