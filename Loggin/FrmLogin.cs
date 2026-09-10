@@ -4,7 +4,6 @@ using SistemaPedidoRestaurante.BLL;
 using SistemaPedidoRestaurante.Entities;
 using SistemaPedidoRestaurante.UIAdministracion;
 using SistemaPedidoRestaurante.UICliente;
-
 namespace SistemaPedidoRestaurante.Loggin
 {
     public partial class FrmLogin : Form
@@ -16,15 +15,14 @@ namespace SistemaPedidoRestaurante.Loggin
             InitializeComponent();
         }
 
-        private void btn_IniciarSesion_Click(object sender, EventArgs e)
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             try
             {
                 string usuario = txtUsuario.Text.Trim();
                 string contrasena = txtContrasena.Text.Trim();
 
-                
-                Usuario usuarioLogueado = _usuarioBLL.IniciarSesion(usuario, contrasena);
+                Usuario usuarioLogueado = _usuarioBLL.IniciarSesion(usuario, contrasena);    
 
                 if (usuarioLogueado.IdRol == 1)
                 {
@@ -33,7 +31,7 @@ namespace SistemaPedidoRestaurante.Loggin
                 }
                 else
                 {
-                    FrmClientes clientes = new FrmClientes();
+                    FrmMenuCliente clientes = new FrmMenuCliente();
                     clientes.Show();
                 }
 
@@ -41,7 +39,7 @@ namespace SistemaPedidoRestaurante.Loggin
             }
             catch (ArgumentException ex)
             {
-                MessageBox.Show(ex.Message, "Validación incorrecta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(ex.Message, "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtUsuario.Focus();
             }
             catch (UnauthorizedAccessException ex)
@@ -52,25 +50,19 @@ namespace SistemaPedidoRestaurante.Loggin
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ocurrió un error inesperado: " + ex.Message, "Error Crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Error de Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void btnCrearCuenta_Click(object sender, EventArgs e)
         {
-            FrmCrearCuenta ventanaPrincipal = new FrmCrearCuenta();
-            ventanaPrincipal.Show();
+            FrmCrearCuenta crearCuenta = new FrmCrearCuenta();
+            crearCuenta.Show();
             this.Hide();
-        }
-
-        private void FrmLogin_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

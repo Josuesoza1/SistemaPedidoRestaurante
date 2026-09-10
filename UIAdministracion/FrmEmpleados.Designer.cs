@@ -1,6 +1,6 @@
-﻿namespace SistemaPedidoRestaurante.UIAdministracion
+﻿namespace  SistemaPedidoRestaurante.UIAdministracion
 {
-    partial class FrmEmpleado
+    partial class FrmEmpleados
     {
         /// <summary>
         /// Required designer variable.
@@ -42,6 +42,7 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpAcciones = new System.Windows.Forms.GroupBox();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -96,7 +97,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(43, 24);
+            this.lblTitulo.Location = new System.Drawing.Point(43, 25);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(396, 35);
@@ -130,7 +131,7 @@
             this.Column2,
             this.ColTelefono});
             this.dgvEmpleados.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvEmpleados.Location = new System.Drawing.Point(25, 23);
+            this.dgvEmpleados.Location = new System.Drawing.Point(24, 23);
             this.dgvEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEmpleados.Name = "dgvEmpleados";
             this.dgvEmpleados.RowHeadersWidth = 62;
@@ -202,6 +203,7 @@
             // 
             // grpAcciones
             // 
+            this.grpAcciones.Controls.Add(this.btnVolver);
             this.grpAcciones.Controls.Add(this.btnEliminar);
             this.grpAcciones.Controls.Add(this.btnEditar);
             this.grpAcciones.Controls.Add(this.btnNuevo);
@@ -217,11 +219,26 @@
             this.grpAcciones.TabStop = false;
             this.grpAcciones.Text = "Acciones";
             // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolver.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnVolver.ForeColor = System.Drawing.Color.Black;
+            this.btnVolver.Location = new System.Drawing.Point(194, 151);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(99, 41);
+            this.btnVolver.TabIndex = 8;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.LightCoral;
             this.btnEliminar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.Red;
+            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
             this.btnEliminar.Location = new System.Drawing.Point(194, 85);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
@@ -234,7 +251,7 @@
             // 
             this.btnEditar.BackColor = System.Drawing.Color.NavajoWhite;
             this.btnEditar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.Olive;
+            this.btnEditar.ForeColor = System.Drawing.Color.Black;
             this.btnEditar.Location = new System.Drawing.Point(62, 85);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
@@ -247,7 +264,7 @@
             // 
             this.btnNuevo.BackColor = System.Drawing.Color.Plum;
             this.btnNuevo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.ForeColor = System.Drawing.Color.Purple;
+            this.btnNuevo.ForeColor = System.Drawing.Color.Black;
             this.btnNuevo.Location = new System.Drawing.Point(62, 27);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
@@ -260,11 +277,11 @@
             // 
             this.btnLimpiar.BackColor = System.Drawing.Color.Aquamarine;
             this.btnLimpiar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.Color.DarkCyan;
+            this.btnLimpiar.ForeColor = System.Drawing.Color.Black;
             this.btnLimpiar.Location = new System.Drawing.Point(62, 148);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(211, 44);
+            this.btnLimpiar.Size = new System.Drawing.Size(99, 44);
             this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -273,7 +290,7 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Location = new System.Drawing.Point(194, 27);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
@@ -349,12 +366,12 @@
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTelefono.Location = new System.Drawing.Point(415, 42);
+            this.lblTelefono.Location = new System.Drawing.Point(414, 42);
             this.lblTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(72, 16);
+            this.lblTelefono.Size = new System.Drawing.Size(71, 16);
             this.lblTelefono.TabIndex = 5;
-            this.lblTelefono.Text = "Telefono:";
+            this.lblTelefono.Text = "Teléfono:";
             // 
             // label4
             // 
@@ -407,7 +424,7 @@
             this.groupBox2.Controls.Add(this.btnBuscar);
             this.groupBox2.Controls.Add(this.lblBuscar);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox2.Location = new System.Drawing.Point(546, 385);
+            this.groupBox2.Location = new System.Drawing.Point(546, 386);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -417,7 +434,7 @@
             // 
             // txtTextoBuscar
             // 
-            this.txtTextoBuscar.Location = new System.Drawing.Point(113, 18);
+            this.txtTextoBuscar.Location = new System.Drawing.Point(114, 18);
             this.txtTextoBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtTextoBuscar.Name = "txtTextoBuscar";
             this.txtTextoBuscar.Size = new System.Drawing.Size(203, 22);
@@ -426,14 +443,14 @@
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btnBuscar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.Blue;
-            this.btnBuscar.Location = new System.Drawing.Point(336, 8);
+            this.btnBuscar.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.Location = new System.Drawing.Point(336, 7);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(119, 38);
             this.btnBuscar.TabIndex = 8;
-            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Text = "⌕";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // lblBuscar
@@ -464,7 +481,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(514, 177);
+            this.groupBox1.Size = new System.Drawing.Size(514, 178);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de Acceso";
@@ -472,7 +489,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(107, 143);
+            this.checkBox1.Location = new System.Drawing.Point(107, 142);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
@@ -483,7 +500,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(44, 143);
+            this.label1.Location = new System.Drawing.Point(44, 142);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 16);
@@ -492,7 +509,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 69);
+            this.textBox1.Location = new System.Drawing.Point(119, 69);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(269, 23);
@@ -500,8 +517,9 @@
             // 
             // cmbBuscar
             // 
+            this.cmbBuscar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBuscar.FormattingEnabled = true;
-            this.cmbBuscar.Location = new System.Drawing.Point(81, 30);
+            this.cmbBuscar.Location = new System.Drawing.Point(82, 30);
             this.cmbBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.cmbBuscar.Name = "cmbBuscar";
             this.cmbBuscar.Size = new System.Drawing.Size(306, 24);
@@ -512,7 +530,7 @@
             this.textBox3.Location = new System.Drawing.Point(144, 110);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(243, 23);
+            this.textBox3.Size = new System.Drawing.Size(242, 23);
             this.textBox3.TabIndex = 9;
             // 
             // label5
@@ -541,19 +559,19 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(43, 33);
+            this.label7.Location = new System.Drawing.Point(43, 34);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 16);
             this.label7.TabIndex = 0;
             this.label7.Text = "Rol:";
             // 
-            // FrmEmpleado
+            // FrmEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1218, 703);
+            this.ClientSize = new System.Drawing.Size(1218, 684);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grpListadoCliente);
@@ -561,10 +579,10 @@
             this.Controls.Add(this.grpDatosClientes);
             this.Controls.Add(this.pnlEncabezado);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "FrmEmpleado";
-            this.Text = "FrmEmpleados";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmEmpleado_FormClosed);
-            this.Load += new System.EventHandler(this.FrmEmpleado_Load);
+            this.Name = "FrmEmpleados";
+            this.Text = "Gestión de Empleados";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmEmpleados_FormClosed);
+            this.Load += new System.EventHandler(this.FrmEmpleados_Load);
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlEncabezado.PerformLayout();
             this.grpListadoCliente.ResumeLayout(false);
@@ -625,5 +643,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnVolver;
     }
 }

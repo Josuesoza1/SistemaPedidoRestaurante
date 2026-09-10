@@ -39,6 +39,8 @@ namespace SistemaPedidoRestaurante.DAL
             }
             return usuarioAutenticado;
         }
+
+
         public Usuarios Listar()
         {
             Usuarios listaDeUsuarios = new Usuarios();

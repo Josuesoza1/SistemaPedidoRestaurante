@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace SistemaPedidoRestaurante.UICliente
 {
-    public partial class FrmClientes : Form
+    public partial class FrmMenuCliente : Form
     {
-        public FrmClientes()
+        public FrmMenuCliente()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void grpAcciones_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmClientes_FormClosed(object sender, FormClosedEventArgs e)
+        private void FrmMenuCliente_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }

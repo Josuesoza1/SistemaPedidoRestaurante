@@ -29,34 +29,37 @@
         private void InitializeComponent()
         {
             this.pnlEncabezado = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSubtitulo = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.grpDatosClientes = new System.Windows.Forms.GroupBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.mtxtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtSnombre = new System.Windows.Forms.TextBox();
             this.txtSapellido = new System.Windows.Forms.TextBox();
             this.txtPapellido = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtPnombre = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
-            this.lblSApellido = new System.Windows.Forms.Label();
-            this.lblPApellido = new System.Windows.Forms.Label();
+            this.lblSapellido = new System.Windows.Forms.Label();
+            this.lblPapellido = new System.Windows.Forms.Label();
             this.lblSnombre = new System.Windows.Forms.Label();
             this.lblPnombre = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtCedula = new System.Windows.Forms.TextBox();
+            this.mtxtCedula = new System.Windows.Forms.MaskedTextBox();
             this.txtContrasena = new System.Windows.Forms.TextBox();
-            this.txt_Usuario = new System.Windows.Forms.TextBox();
-            this.lblCedula = new System.Windows.Forms.Label();
-            this.txt_ConfirmarContrasena = new System.Windows.Forms.TextBox();
-            this.lblConfirmarContrasena = new System.Windows.Forms.Label();
-            this.lblContrasena = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtConfirmarContrasena = new System.Windows.Forms.TextBox();
+            this.lblConfirmarContraseña = new System.Windows.Forms.Label();
+            this.lblContraseña = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
+            this.lblCedula = new System.Windows.Forms.Label();
+            this.btnCrearCuenta = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.lblTipoUsuario = new System.Windows.Forms.Label();
+            this.cmbTipoUsuario = new System.Windows.Forms.ComboBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnIniciarSesion = new System.Windows.Forms.Button();
+            this.lblPregunta = new System.Windows.Forms.Label();
             this.pnlEncabezado.SuspendLayout();
             this.grpDatosClientes.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -65,7 +68,7 @@
             // pnlEncabezado
             // 
             this.pnlEncabezado.BackColor = System.Drawing.Color.MidnightBlue;
-            this.pnlEncabezado.Controls.Add(this.label1);
+            this.pnlEncabezado.Controls.Add(this.lblSubtitulo);
             this.pnlEncabezado.Controls.Add(this.lblTitulo);
             this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEncabezado.Location = new System.Drawing.Point(0, 0);
@@ -74,24 +77,24 @@
             this.pnlEncabezado.Size = new System.Drawing.Size(956, 130);
             this.pnlEncabezado.TabIndex = 3;
             // 
-            // label1
+            // lblSubtitulo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(272, 78);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(378, 35);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "SISTEMA RESTAURANTE";
+            this.lblSubtitulo.AutoSize = true;
+            this.lblSubtitulo.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtitulo.ForeColor = System.Drawing.Color.White;
+            this.lblSubtitulo.Location = new System.Drawing.Point(272, 78);
+            this.lblSubtitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSubtitulo.Name = "lblSubtitulo";
+            this.lblSubtitulo.Size = new System.Drawing.Size(378, 35);
+            this.lblSubtitulo.TabIndex = 1;
+            this.lblSubtitulo.Text = "SISTEMA RESTAURANTE";
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(330, 28);
+            this.lblTitulo.Location = new System.Drawing.Point(329, 28);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(253, 35);
@@ -100,43 +103,59 @@
             // 
             // grpDatosClientes
             // 
+            this.grpDatosClientes.Controls.Add(this.txtEmail);
+            this.grpDatosClientes.Controls.Add(this.mtxtTelefono);
             this.grpDatosClientes.Controls.Add(this.lblEmail);
             this.grpDatosClientes.Controls.Add(this.txtSnombre);
             this.grpDatosClientes.Controls.Add(this.txtSapellido);
             this.grpDatosClientes.Controls.Add(this.txtPapellido);
-            this.grpDatosClientes.Controls.Add(this.txtEmail);
-            this.grpDatosClientes.Controls.Add(this.txtTelefono);
             this.grpDatosClientes.Controls.Add(this.txtPnombre);
             this.grpDatosClientes.Controls.Add(this.lblTelefono);
-            this.grpDatosClientes.Controls.Add(this.lblSApellido);
-            this.grpDatosClientes.Controls.Add(this.lblPApellido);
+            this.grpDatosClientes.Controls.Add(this.lblSapellido);
+            this.grpDatosClientes.Controls.Add(this.lblPapellido);
             this.grpDatosClientes.Controls.Add(this.lblSnombre);
             this.grpDatosClientes.Controls.Add(this.lblPnombre);
             this.grpDatosClientes.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDatosClientes.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.grpDatosClientes.Location = new System.Drawing.Point(12, 176);
+            this.grpDatosClientes.Location = new System.Drawing.Point(12, 196);
             this.grpDatosClientes.Margin = new System.Windows.Forms.Padding(4);
             this.grpDatosClientes.Name = "grpDatosClientes";
             this.grpDatosClientes.Padding = new System.Windows.Forms.Padding(4);
-            this.grpDatosClientes.Size = new System.Drawing.Size(454, 265);
+            this.grpDatosClientes.Size = new System.Drawing.Size(455, 281);
             this.grpDatosClientes.TabIndex = 6;
             this.grpDatosClientes.TabStop = false;
             this.grpDatosClientes.Text = "Datos Personales";
             // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(188, 225);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(198, 23);
+            this.txtEmail.TabIndex = 30;
+            // 
+            // mtxtTelefono
+            // 
+            this.mtxtTelefono.Location = new System.Drawing.Point(188, 180);
+            this.mtxtTelefono.Mask = "+000 0000-0000";
+            this.mtxtTelefono.Name = "mtxtTelefono";
+            this.mtxtTelefono.Size = new System.Drawing.Size(198, 23);
+            this.mtxtTelefono.TabIndex = 28;
+            // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblEmail.Location = new System.Drawing.Point(79, 235);
+            this.lblEmail.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblEmail.Location = new System.Drawing.Point(112, 228);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(44, 16);
-            this.lblEmail.TabIndex = 25;
-            this.lblEmail.Text = "Email";
+            this.lblEmail.Size = new System.Drawing.Size(48, 16);
+            this.lblEmail.TabIndex = 13;
+            this.lblEmail.Text = "Email:";
             // 
             // txtSnombre
             // 
-            this.txtSnombre.Location = new System.Drawing.Point(188, 78);
+            this.txtSnombre.Location = new System.Drawing.Point(188, 68);
             this.txtSnombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtSnombre.Name = "txtSnombre";
             this.txtSnombre.Size = new System.Drawing.Size(198, 23);
@@ -144,7 +163,7 @@
             // 
             // txtSapellido
             // 
-            this.txtSapellido.Location = new System.Drawing.Point(188, 158);
+            this.txtSapellido.Location = new System.Drawing.Point(188, 140);
             this.txtSapellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtSapellido.Name = "txtSapellido";
             this.txtSapellido.Size = new System.Drawing.Size(198, 23);
@@ -152,30 +171,15 @@
             // 
             // txtPapellido
             // 
-            this.txtPapellido.Location = new System.Drawing.Point(188, 122);
+            this.txtPapellido.Location = new System.Drawing.Point(188, 102);
             this.txtPapellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtPapellido.Name = "txtPapellido";
             this.txtPapellido.Size = new System.Drawing.Size(198, 23);
             this.txtPapellido.TabIndex = 9;
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(188, 235);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(198, 23);
-            this.txtEmail.TabIndex = 23;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Location = new System.Drawing.Point(188, 197);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(198, 23);
-            this.txtTelefono.TabIndex = 8;
-            // 
             // txtPnombre
             // 
-            this.txtPnombre.Location = new System.Drawing.Point(188, 39);
+            this.txtPnombre.Location = new System.Drawing.Point(188, 28);
             this.txtPnombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtPnombre.Name = "txtPnombre";
             this.txtPnombre.Size = new System.Drawing.Size(198, 23);
@@ -184,41 +188,41 @@
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTelefono.Location = new System.Drawing.Point(63, 199);
+            this.lblTelefono.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTelefono.Location = new System.Drawing.Point(87, 187);
             this.lblTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(72, 16);
+            this.lblTelefono.Size = new System.Drawing.Size(71, 16);
             this.lblTelefono.TabIndex = 5;
-            this.lblTelefono.Text = "Telefono:";
+            this.lblTelefono.Text = "Teléfono:";
             // 
-            // lblSApellido
+            // lblSapellido
             // 
-            this.lblSApellido.AutoSize = true;
-            this.lblSApellido.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblSApellido.Location = new System.Drawing.Point(43, 162);
-            this.lblSApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblSApellido.Name = "lblSApellido";
-            this.lblSApellido.Size = new System.Drawing.Size(130, 16);
-            this.lblSApellido.TabIndex = 3;
-            this.lblSApellido.Text = "Segundo Apelido:";
+            this.lblSapellido.AutoSize = true;
+            this.lblSapellido.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSapellido.Location = new System.Drawing.Point(27, 144);
+            this.lblSapellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSapellido.Name = "lblSapellido";
+            this.lblSapellido.Size = new System.Drawing.Size(130, 16);
+            this.lblSapellido.TabIndex = 3;
+            this.lblSapellido.Text = "Segundo Apelido:";
             // 
-            // lblPApellido
+            // lblPapellido
             // 
-            this.lblPApellido.AutoSize = true;
-            this.lblPApellido.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblPApellido.Location = new System.Drawing.Point(43, 126);
-            this.lblPApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPApellido.Name = "lblPApellido";
-            this.lblPApellido.Size = new System.Drawing.Size(117, 16);
-            this.lblPApellido.TabIndex = 2;
-            this.lblPApellido.Text = "Primer Apellido:";
+            this.lblPapellido.AutoSize = true;
+            this.lblPapellido.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblPapellido.Location = new System.Drawing.Point(37, 106);
+            this.lblPapellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPapellido.Name = "lblPapellido";
+            this.lblPapellido.Size = new System.Drawing.Size(117, 16);
+            this.lblPapellido.TabIndex = 2;
+            this.lblPapellido.Text = "Primer Apellido:";
             // 
             // lblSnombre
             // 
             this.lblSnombre.AutoSize = true;
-            this.lblSnombre.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblSnombre.Location = new System.Drawing.Point(43, 82);
+            this.lblSnombre.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSnombre.Location = new System.Drawing.Point(23, 71);
             this.lblSnombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSnombre.Name = "lblSnombre";
             this.lblSnombre.Size = new System.Drawing.Size(133, 16);
@@ -228,8 +232,8 @@
             // lblPnombre
             // 
             this.lblPnombre.AutoSize = true;
-            this.lblPnombre.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblPnombre.Location = new System.Drawing.Point(43, 43);
+            this.lblPnombre.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblPnombre.Location = new System.Drawing.Point(37, 32);
             this.lblPnombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPnombre.Name = "lblPnombre";
             this.lblPnombre.Size = new System.Drawing.Size(116, 16);
@@ -238,170 +242,211 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtCedula);
+            this.groupBox1.Controls.Add(this.mtxtCedula);
             this.groupBox1.Controls.Add(this.txtContrasena);
-            this.groupBox1.Controls.Add(this.txt_Usuario);
-            this.groupBox1.Controls.Add(this.lblCedula);
-            this.groupBox1.Controls.Add(this.txt_ConfirmarContrasena);
-            this.groupBox1.Controls.Add(this.lblConfirmarContrasena);
-            this.groupBox1.Controls.Add(this.lblContrasena);
+            this.groupBox1.Controls.Add(this.txtUsuario);
+            this.groupBox1.Controls.Add(this.txtConfirmarContrasena);
+            this.groupBox1.Controls.Add(this.lblConfirmarContraseña);
+            this.groupBox1.Controls.Add(this.lblContraseña);
             this.groupBox1.Controls.Add(this.lblUsuario);
+            this.groupBox1.Controls.Add(this.lblCedula);
             this.groupBox1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox1.Location = new System.Drawing.Point(488, 176);
+            this.groupBox1.Location = new System.Drawing.Point(485, 196);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(454, 257);
+            this.groupBox1.Size = new System.Drawing.Size(455, 281);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de Acceso";
             // 
-            // txtCedula
+            // mtxtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(52, 58);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(340, 23);
-            this.txtCedula.TabIndex = 24;
+            this.mtxtCedula.Location = new System.Drawing.Point(43, 44);
+            this.mtxtCedula.Mask = "000-000000-0000L";
+            this.mtxtCedula.Name = "mtxtCedula";
+            this.mtxtCedula.Size = new System.Drawing.Size(340, 23);
+            this.mtxtCedula.TabIndex = 27;
             // 
             // txtContrasena
             // 
-            this.txtContrasena.Location = new System.Drawing.Point(52, 161);
+            this.txtContrasena.Location = new System.Drawing.Point(43, 155);
             this.txtContrasena.Margin = new System.Windows.Forms.Padding(4);
             this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.PasswordChar = '*';
             this.txtContrasena.Size = new System.Drawing.Size(340, 23);
             this.txtContrasena.TabIndex = 10;
             // 
-            // txt_Usuario
+            // txtUsuario
             // 
-            this.txt_Usuario.Location = new System.Drawing.Point(52, 104);
-            this.txt_Usuario.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_Usuario.Name = "txt_Usuario";
-            this.txt_Usuario.Size = new System.Drawing.Size(340, 23);
-            this.txt_Usuario.TabIndex = 9;
+            this.txtUsuario.Location = new System.Drawing.Point(43, 98);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(340, 23);
+            this.txtUsuario.TabIndex = 9;
             // 
-            // lblCedula
+            // txtConfirmarContrasena
             // 
-            this.lblCedula.AutoSize = true;
-            this.lblCedula.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblCedula.Location = new System.Drawing.Point(49, 30);
-            this.lblCedula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCedula.Name = "lblCedula";
-            this.lblCedula.Size = new System.Drawing.Size(56, 16);
-            this.lblCedula.TabIndex = 24;
-            this.lblCedula.Text = "Cedula";
+            this.txtConfirmarContrasena.Location = new System.Drawing.Point(43, 217);
+            this.txtConfirmarContrasena.Margin = new System.Windows.Forms.Padding(4);
+            this.txtConfirmarContrasena.Name = "txtConfirmarContrasena";
+            this.txtConfirmarContrasena.Size = new System.Drawing.Size(340, 23);
+            this.txtConfirmarContrasena.TabIndex = 8;
             // 
-            // txt_ConfirmarContrasena
+            // lblConfirmarContraseña
             // 
-            this.txt_ConfirmarContrasena.Location = new System.Drawing.Point(52, 223);
-            this.txt_ConfirmarContrasena.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_ConfirmarContrasena.Name = "txt_ConfirmarContrasena";
-            this.txt_ConfirmarContrasena.Size = new System.Drawing.Size(340, 23);
-            this.txt_ConfirmarContrasena.TabIndex = 8;
+            this.lblConfirmarContraseña.AutoSize = true;
+            this.lblConfirmarContraseña.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblConfirmarContraseña.Location = new System.Drawing.Point(39, 190);
+            this.lblConfirmarContraseña.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblConfirmarContraseña.Name = "lblConfirmarContraseña";
+            this.lblConfirmarContraseña.Size = new System.Drawing.Size(165, 16);
+            this.lblConfirmarContraseña.TabIndex = 5;
+            this.lblConfirmarContraseña.Text = "Confirmar Contraseña:";
             // 
-            // lblConfirmarContrasena
+            // lblContraseña
             // 
-            this.lblConfirmarContrasena.AutoSize = true;
-            this.lblConfirmarContrasena.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblConfirmarContrasena.Location = new System.Drawing.Point(49, 196);
-            this.lblConfirmarContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblConfirmarContrasena.Name = "lblConfirmarContrasena";
-            this.lblConfirmarContrasena.Size = new System.Drawing.Size(165, 16);
-            this.lblConfirmarContrasena.TabIndex = 5;
-            this.lblConfirmarContrasena.Text = "Confirmar Contraseña:";
-            // 
-            // lblContrasena
-            // 
-            this.lblContrasena.AutoSize = true;
-            this.lblContrasena.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblContrasena.Location = new System.Drawing.Point(49, 136);
-            this.lblContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblContrasena.Name = "lblContrasena";
-            this.lblContrasena.Size = new System.Drawing.Size(92, 16);
-            this.lblContrasena.TabIndex = 3;
-            this.lblContrasena.Text = "Contraseña:";
+            this.lblContraseña.AutoSize = true;
+            this.lblContraseña.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblContraseña.Location = new System.Drawing.Point(39, 132);
+            this.lblContraseña.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblContraseña.Name = "lblContraseña";
+            this.lblContraseña.Size = new System.Drawing.Size(92, 16);
+            this.lblContraseña.TabIndex = 3;
+            this.lblContraseña.Text = "Contraseña:";
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblUsuario.Location = new System.Drawing.Point(49, 84);
+            this.lblUsuario.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblUsuario.Location = new System.Drawing.Point(39, 78);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(65, 16);
             this.lblUsuario.TabIndex = 2;
             this.lblUsuario.Text = "Usuario:";
             // 
-            // button1
+            // lblCedula
             // 
-            this.button1.BackColor = System.Drawing.Color.Aquamarine;
-            this.button1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.button1.Location = new System.Drawing.Point(255, 449);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 44);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "CREAR CUENTA";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnCrearCuenta);
+            this.lblCedula.AutoSize = true;
+            this.lblCedula.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblCedula.Location = new System.Drawing.Point(39, 25);
+            this.lblCedula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCedula.Name = "lblCedula";
+            this.lblCedula.Size = new System.Drawing.Size(59, 16);
+            this.lblCedula.TabIndex = 0;
+            this.lblCedula.Text = "Cédula:";
             // 
-            // label9
+            // btnCrearCuenta
             // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label9.Location = new System.Drawing.Point(394, 506);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(145, 16);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "¿Ya tienes una cuenta?";
+            this.btnCrearCuenta.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnCrearCuenta.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearCuenta.ForeColor = System.Drawing.Color.Black;
+            this.btnCrearCuenta.Location = new System.Drawing.Point(128, 498);
+            this.btnCrearCuenta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCrearCuenta.Name = "btnCrearCuenta";
+            this.btnCrearCuenta.Size = new System.Drawing.Size(211, 44);
+            this.btnCrearCuenta.TabIndex = 20;
+            this.btnCrearCuenta.Text = "CREAR CUENTA";
+            this.btnCrearCuenta.UseVisualStyleBackColor = false;
+            this.btnCrearCuenta.Click += new System.EventHandler(this.btnCrearCuenta_Click);
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.BackColor = System.Drawing.Color.Aquamarine;
-            this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.button2.Location = new System.Drawing.Point(361, 534);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(211, 44);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "INICIAR SESIÓN";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.btnCancelar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelar.Location = new System.Drawing.Point(604, 498);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(211, 44);
+            this.btnCancelar.TabIndex = 21;
+            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnEliminar
+            // lblTipoUsuario
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.LightCoral;
-            this.btnEliminar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.Red;
-            this.btnEliminar.Location = new System.Drawing.Point(488, 449);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(211, 44);
-            this.btnEliminar.TabIndex = 21;
-            this.btnEliminar.Text = "CANCELAR";
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btn_Salir);
+            this.lblTipoUsuario.AutoSize = true;
+            this.lblTipoUsuario.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblTipoUsuario.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblTipoUsuario.Location = new System.Drawing.Point(46, 151);
+            this.lblTipoUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTipoUsuario.Name = "lblTipoUsuario";
+            this.lblTipoUsuario.Size = new System.Drawing.Size(122, 16);
+            this.lblTipoUsuario.TabIndex = 22;
+            this.lblTipoUsuario.Text = "Tipo De Usuario:";
+            // 
+            // cmbTipoUsuario
+            // 
+            this.cmbTipoUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoUsuario.FormattingEnabled = true;
+            this.cmbTipoUsuario.Location = new System.Drawing.Point(171, 148);
+            this.cmbTipoUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbTipoUsuario.Name = "cmbTipoUsuario";
+            this.cmbTipoUsuario.Size = new System.Drawing.Size(134, 24);
+            this.cmbTipoUsuario.TabIndex = 23;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnLimpiar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.Black;
+            this.btnLimpiar.Location = new System.Drawing.Point(367, 498);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(211, 44);
+            this.btnLimpiar.TabIndex = 24;
+            this.btnLimpiar.Text = "LIMPIAR";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnIniciarSesion
+            // 
+            this.btnIniciarSesion.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnIniciarSesion.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion.ForeColor = System.Drawing.Color.Black;
+            this.btnIniciarSesion.Location = new System.Drawing.Point(375, 585);
+            this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(4);
+            this.btnIniciarSesion.Name = "btnIniciarSesion";
+            this.btnIniciarSesion.Size = new System.Drawing.Size(211, 44);
+            this.btnIniciarSesion.TabIndex = 26;
+            this.btnIniciarSesion.Text = "INICIAR SESIÓN";
+            this.btnIniciarSesion.UseVisualStyleBackColor = false;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
+            // 
+            // lblPregunta
+            // 
+            this.lblPregunta.AutoSize = true;
+            this.lblPregunta.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPregunta.Location = new System.Drawing.Point(392, 554);
+            this.lblPregunta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPregunta.Name = "lblPregunta";
+            this.lblPregunta.Size = new System.Drawing.Size(145, 16);
+            this.lblPregunta.TabIndex = 25;
+            this.lblPregunta.Text = "¿Ya tienes una cuenta?";
             // 
             // FrmCrearCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(956, 589);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(956, 645);
+            this.Controls.Add(this.btnIniciarSesion);
+            this.Controls.Add(this.lblPregunta);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.cmbTipoUsuario);
+            this.Controls.Add(this.lblTipoUsuario);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnCrearCuenta);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpDatosClientes);
             this.Controls.Add(this.pnlEncabezado);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmCrearCuenta";
-            this.Text = "FrmCrearCuenta";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmCrearCuenta_FormClosed);
+            this.Text = "Crear Cuenta - Sistema Restaurante";
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlEncabezado.PerformLayout();
             this.grpDatosClientes.ResumeLayout(false);
@@ -416,33 +461,36 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlEncabezado;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSubtitulo;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.GroupBox grpDatosClientes;
         private System.Windows.Forms.TextBox txtSnombre;
         private System.Windows.Forms.TextBox txtSapellido;
         private System.Windows.Forms.TextBox txtPapellido;
-        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtPnombre;
         private System.Windows.Forms.Label lblTelefono;
-        private System.Windows.Forms.Label lblSApellido;
-        private System.Windows.Forms.Label lblPApellido;
+        private System.Windows.Forms.Label lblSapellido;
+        private System.Windows.Forms.Label lblPapellido;
         private System.Windows.Forms.Label lblSnombre;
         private System.Windows.Forms.Label lblPnombre;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtContrasena;
-        private System.Windows.Forms.TextBox txt_Usuario;
-        private System.Windows.Forms.TextBox txt_ConfirmarContrasena;
-        private System.Windows.Forms.Label lblConfirmarContrasena;
-        private System.Windows.Forms.Label lblContrasena;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtConfirmarContrasena;
+        private System.Windows.Forms.Label lblConfirmarContraseña;
+        private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Label lblCedula;
+        private System.Windows.Forms.Button btnCrearCuenta;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblTipoUsuario;
+        private System.Windows.Forms.ComboBox cmbTipoUsuario;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnIniciarSesion;
+        private System.Windows.Forms.Label lblPregunta;
+        private System.Windows.Forms.MaskedTextBox mtxtCedula;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.MaskedTextBox mtxtTelefono;
     }
 }

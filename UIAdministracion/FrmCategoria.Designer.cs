@@ -36,6 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblPnombre = new System.Windows.Forms.Label();
             this.grpAcciones = new System.Windows.Forms.GroupBox();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -74,7 +75,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(43, 24);
+            this.lblTitulo.Location = new System.Drawing.Point(43, 25);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(403, 35);
@@ -93,7 +94,7 @@
             this.grpDatosClientes.Margin = new System.Windows.Forms.Padding(4);
             this.grpDatosClientes.Name = "grpDatosClientes";
             this.grpDatosClientes.Padding = new System.Windows.Forms.Padding(4);
-            this.grpDatosClientes.Size = new System.Drawing.Size(367, 210);
+            this.grpDatosClientes.Size = new System.Drawing.Size(366, 210);
             this.grpDatosClientes.TabIndex = 3;
             this.grpDatosClientes.TabStop = false;
             this.grpDatosClientes.Text = "Datos de la Categoría";
@@ -102,14 +103,15 @@
             // 
             this.txtPapellido.Location = new System.Drawing.Point(46, 117);
             this.txtPapellido.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPapellido.MaxLength = 150;
             this.txtPapellido.Multiline = true;
             this.txtPapellido.Name = "txtPapellido";
-            this.txtPapellido.Size = new System.Drawing.Size(270, 76);
+            this.txtPapellido.Size = new System.Drawing.Size(269, 75);
             this.txtPapellido.TabIndex = 9;
             // 
             // txtPnombre
             // 
-            this.txtPnombre.Location = new System.Drawing.Point(118, 41);
+            this.txtPnombre.Location = new System.Drawing.Point(119, 41);
             this.txtPnombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtPnombre.Name = "txtPnombre";
             this.txtPnombre.Size = new System.Drawing.Size(198, 23);
@@ -139,11 +141,13 @@
             // 
             // grpAcciones
             // 
+            this.grpAcciones.Controls.Add(this.btnVolver);
             this.grpAcciones.Controls.Add(this.btnEliminar);
             this.grpAcciones.Controls.Add(this.btnEditar);
             this.grpAcciones.Controls.Add(this.btnNuevo);
             this.grpAcciones.Controls.Add(this.btnLimpiar);
             this.grpAcciones.Controls.Add(this.btnGuardar);
+            this.grpAcciones.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
             this.grpAcciones.ForeColor = System.Drawing.Color.Green;
             this.grpAcciones.Location = new System.Drawing.Point(419, 114);
             this.grpAcciones.Margin = new System.Windows.Forms.Padding(4);
@@ -154,11 +158,26 @@
             this.grpAcciones.TabStop = false;
             this.grpAcciones.Text = "Acciones";
             // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolver.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnVolver.ForeColor = System.Drawing.Color.Black;
+            this.btnVolver.Location = new System.Drawing.Point(194, 150);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(99, 42);
+            this.btnVolver.TabIndex = 8;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.LightCoral;
             this.btnEliminar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.Red;
+            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
             this.btnEliminar.Location = new System.Drawing.Point(194, 85);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
@@ -171,7 +190,7 @@
             // 
             this.btnEditar.BackColor = System.Drawing.Color.NavajoWhite;
             this.btnEditar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.Olive;
+            this.btnEditar.ForeColor = System.Drawing.Color.Black;
             this.btnEditar.Location = new System.Drawing.Point(62, 85);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
@@ -184,7 +203,7 @@
             // 
             this.btnNuevo.BackColor = System.Drawing.Color.Plum;
             this.btnNuevo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.ForeColor = System.Drawing.Color.Purple;
+            this.btnNuevo.ForeColor = System.Drawing.Color.Black;
             this.btnNuevo.Location = new System.Drawing.Point(62, 27);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
@@ -197,11 +216,11 @@
             // 
             this.btnLimpiar.BackColor = System.Drawing.Color.Aquamarine;
             this.btnLimpiar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.Color.DarkCyan;
+            this.btnLimpiar.ForeColor = System.Drawing.Color.Black;
             this.btnLimpiar.Location = new System.Drawing.Point(62, 148);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(211, 44);
+            this.btnLimpiar.Size = new System.Drawing.Size(99, 44);
             this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -210,7 +229,7 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Location = new System.Drawing.Point(194, 27);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
@@ -226,7 +245,7 @@
             this.groupBox2.Controls.Add(this.btnBuscar);
             this.groupBox2.Controls.Add(this.lblBuscar);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox2.Location = new System.Drawing.Point(23, 344);
+            this.groupBox2.Location = new System.Drawing.Point(23, 345);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -236,7 +255,7 @@
             // 
             // txtTextoBuscar
             // 
-            this.txtTextoBuscar.Location = new System.Drawing.Point(113, 18);
+            this.txtTextoBuscar.Location = new System.Drawing.Point(114, 18);
             this.txtTextoBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtTextoBuscar.Name = "txtTextoBuscar";
             this.txtTextoBuscar.Size = new System.Drawing.Size(203, 22);
@@ -245,14 +264,14 @@
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btnBuscar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.Blue;
+            this.btnBuscar.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
             this.btnBuscar.Location = new System.Drawing.Point(333, 9);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(119, 38);
             this.btnBuscar.TabIndex = 8;
-            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Text = "⌕";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // lblBuscar
@@ -275,10 +294,10 @@
             this.grpListadoCliente.Margin = new System.Windows.Forms.Padding(4);
             this.grpListadoCliente.Name = "grpListadoCliente";
             this.grpListadoCliente.Padding = new System.Windows.Forms.Padding(4);
-            this.grpListadoCliente.Size = new System.Drawing.Size(751, 150);
+            this.grpListadoCliente.Size = new System.Drawing.Size(750, 150);
             this.grpListadoCliente.TabIndex = 13;
             this.grpListadoCliente.TabStop = false;
-            this.grpListadoCliente.Text = "Listado de Clientes";
+            this.grpListadoCliente.Text = "Listado de Categorías";
             // 
             // dgvCategorias
             // 
@@ -329,7 +348,7 @@
             this.Controls.Add(this.pnlEncabezado);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmCategoria";
-            this.Text = "FrmCategoria";
+            this.Text = "Gestión de Categoría";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmCategoria_FormClosed);
             this.Load += new System.EventHandler(this.FrmCategoria_Load);
             this.pnlEncabezado.ResumeLayout(false);
@@ -369,5 +388,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPnombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColSnombre;
+        private System.Windows.Forms.Button btnVolver;
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.pnlEncabezado = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.grpDatosClientes = new System.Windows.Forms.GroupBox();
@@ -37,6 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lblSnombre = new System.Windows.Forms.Label();
             this.grpAcciones = new System.Windows.Forms.GroupBox();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -47,18 +47,16 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.grpListadoCliente = new System.Windows.Forms.GroupBox();
-            this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.dgvRoles = new System.Windows.Forms.DataGridView();
             this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColSnombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Colcedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rolBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlEncabezado.SuspendLayout();
             this.grpDatosClientes.SuspendLayout();
             this.grpAcciones.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.grpListadoCliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rolBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlEncabezado
@@ -77,7 +75,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(43, 24);
+            this.lblTitulo.Location = new System.Drawing.Point(43, 25);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(310, 35);
@@ -96,14 +94,14 @@
             this.grpDatosClientes.Margin = new System.Windows.Forms.Padding(4);
             this.grpDatosClientes.Name = "grpDatosClientes";
             this.grpDatosClientes.Padding = new System.Windows.Forms.Padding(4);
-            this.grpDatosClientes.Size = new System.Drawing.Size(364, 241);
+            this.grpDatosClientes.Size = new System.Drawing.Size(364, 242);
             this.grpDatosClientes.TabIndex = 6;
             this.grpDatosClientes.TabStop = false;
             this.grpDatosClientes.Text = "Datos del Rol";
             // 
             // txtSnombre
             // 
-            this.txtSnombre.Location = new System.Drawing.Point(113, 33);
+            this.txtSnombre.Location = new System.Drawing.Point(114, 34);
             this.txtSnombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtSnombre.Name = "txtSnombre";
             this.txtSnombre.Size = new System.Drawing.Size(198, 23);
@@ -113,9 +111,10 @@
             // 
             this.txtSapellido.Location = new System.Drawing.Point(41, 106);
             this.txtSapellido.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSapellido.MaxLength = 150;
             this.txtSapellido.Multiline = true;
             this.txtSapellido.Name = "txtSapellido";
-            this.txtSapellido.Size = new System.Drawing.Size(270, 101);
+            this.txtSapellido.Size = new System.Drawing.Size(269, 102);
             this.txtSapellido.TabIndex = 10;
             // 
             // label4
@@ -133,7 +132,7 @@
             // 
             this.lblSnombre.AutoSize = true;
             this.lblSnombre.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblSnombre.Location = new System.Drawing.Point(37, 35);
+            this.lblSnombre.Location = new System.Drawing.Point(37, 36);
             this.lblSnombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSnombre.Name = "lblSnombre";
             this.lblSnombre.Size = new System.Drawing.Size(66, 16);
@@ -142,6 +141,7 @@
             // 
             // grpAcciones
             // 
+            this.grpAcciones.Controls.Add(this.btnVolver);
             this.grpAcciones.Controls.Add(this.btnEliminar);
             this.grpAcciones.Controls.Add(this.btnEditar);
             this.grpAcciones.Controls.Add(this.btnNuevo);
@@ -152,16 +152,31 @@
             this.grpAcciones.Margin = new System.Windows.Forms.Padding(4);
             this.grpAcciones.Name = "grpAcciones";
             this.grpAcciones.Padding = new System.Windows.Forms.Padding(4);
-            this.grpAcciones.Size = new System.Drawing.Size(356, 241);
+            this.grpAcciones.Size = new System.Drawing.Size(356, 242);
             this.grpAcciones.TabIndex = 7;
             this.grpAcciones.TabStop = false;
             this.grpAcciones.Text = "Acciones";
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolver.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnVolver.ForeColor = System.Drawing.Color.Black;
+            this.btnVolver.Location = new System.Drawing.Point(195, 148);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(98, 42);
+            this.btnVolver.TabIndex = 8;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.LightCoral;
             this.btnEliminar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.Red;
+            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
             this.btnEliminar.Location = new System.Drawing.Point(194, 85);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
@@ -174,7 +189,7 @@
             // 
             this.btnEditar.BackColor = System.Drawing.Color.NavajoWhite;
             this.btnEditar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.Olive;
+            this.btnEditar.ForeColor = System.Drawing.Color.Black;
             this.btnEditar.Location = new System.Drawing.Point(62, 85);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
@@ -187,7 +202,7 @@
             // 
             this.btnNuevo.BackColor = System.Drawing.Color.Plum;
             this.btnNuevo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.ForeColor = System.Drawing.Color.Purple;
+            this.btnNuevo.ForeColor = System.Drawing.Color.Black;
             this.btnNuevo.Location = new System.Drawing.Point(62, 27);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
@@ -200,11 +215,11 @@
             // 
             this.btnLimpiar.BackColor = System.Drawing.Color.Aquamarine;
             this.btnLimpiar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.Color.DarkCyan;
+            this.btnLimpiar.ForeColor = System.Drawing.Color.Black;
             this.btnLimpiar.Location = new System.Drawing.Point(62, 148);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(211, 44);
+            this.btnLimpiar.Size = new System.Drawing.Size(99, 44);
             this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -213,7 +228,7 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Location = new System.Drawing.Point(194, 27);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
@@ -239,7 +254,7 @@
             // 
             // txtTextoBuscar
             // 
-            this.txtTextoBuscar.Location = new System.Drawing.Point(113, 18);
+            this.txtTextoBuscar.Location = new System.Drawing.Point(114, 18);
             this.txtTextoBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtTextoBuscar.Name = "txtTextoBuscar";
             this.txtTextoBuscar.Size = new System.Drawing.Size(203, 22);
@@ -248,14 +263,14 @@
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btnBuscar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.Blue;
-            this.btnBuscar.Location = new System.Drawing.Point(336, 8);
+            this.btnBuscar.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.Location = new System.Drawing.Point(336, 7);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(119, 38);
             this.btnBuscar.TabIndex = 8;
-            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Text = "⌕";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // lblBuscar
@@ -272,7 +287,7 @@
             // 
             // grpListadoCliente
             // 
-            this.grpListadoCliente.Controls.Add(this.dgvClientes);
+            this.grpListadoCliente.Controls.Add(this.dgvRoles);
             this.grpListadoCliente.ForeColor = System.Drawing.Color.DarkOrchid;
             this.grpListadoCliente.Location = new System.Drawing.Point(12, 438);
             this.grpListadoCliente.Margin = new System.Windows.Forms.Padding(4);
@@ -283,20 +298,20 @@
             this.grpListadoCliente.TabStop = false;
             this.grpListadoCliente.Text = "Listado de Roles";
             // 
-            // dgvClientes
+            // dgvRoles
             // 
-            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvRoles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRoles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColID,
             this.ColSnombre,
             this.Colcedula});
-            this.dgvClientes.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvClientes.Location = new System.Drawing.Point(29, 23);
-            this.dgvClientes.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvClientes.Name = "dgvClientes";
-            this.dgvClientes.RowHeadersWidth = 62;
-            this.dgvClientes.Size = new System.Drawing.Size(457, 119);
-            this.dgvClientes.TabIndex = 0;
+            this.dgvRoles.GridColor = System.Drawing.SystemColors.AppWorkspace;
+            this.dgvRoles.Location = new System.Drawing.Point(29, 23);
+            this.dgvRoles.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvRoles.Name = "dgvRoles";
+            this.dgvRoles.RowHeadersWidth = 62;
+            this.dgvRoles.Size = new System.Drawing.Size(457, 119);
+            this.dgvRoles.TabIndex = 0;
             // 
             // ColID
             // 
@@ -319,16 +334,12 @@
             this.Colcedula.Name = "Colcedula";
             this.Colcedula.Width = 150;
             // 
-            // rolBindingSource
-            // 
-            this.rolBindingSource.DataMember = "rol";
-            // 
             // FrmRoles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(773, 600);
+            this.ClientSize = new System.Drawing.Size(773, 599);
             this.Controls.Add(this.grpListadoCliente);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grpAcciones);
@@ -336,7 +347,7 @@
             this.Controls.Add(this.pnlEncabezado);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmRoles";
-            this.Text = "FrmRoles";
+            this.Text = "Gestión de Roles";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmRoles_FormClosed);
             this.Load += new System.EventHandler(this.FrmRoles_Load);
             this.pnlEncabezado.ResumeLayout(false);
@@ -347,8 +358,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.grpListadoCliente.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rolBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -373,12 +383,10 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label lblBuscar;
         private System.Windows.Forms.GroupBox grpListadoCliente;
-        private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.DataGridView dgvRoles;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColSnombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Colcedula;
-    
-        private System.Windows.Forms.BindingSource rolBindingSource;
- 
+        private System.Windows.Forms.Button btnVolver;
     }
 }

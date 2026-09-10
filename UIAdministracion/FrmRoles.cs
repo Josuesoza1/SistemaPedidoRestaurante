@@ -13,27 +13,30 @@ namespace SistemaPedidoRestaurante.UIAdministracion
             InitializeComponent();
         }
 
-
+        
 
         private void CargarDatos()
         {
             try
             {
-                
-                dgvClientes.AutoGenerateColumns = false;
-
-                
-                dgvClientes.Columns[0].DataPropertyName = "IdRol";
-                dgvClientes.Columns[1].DataPropertyName = "Nombre";
-                dgvClientes.Columns[2].DataPropertyName = "Descripcion";
-                
-                dgvClientes.DataSource = _rolBLL.ObtenerRoles();
+                dgvRoles.AutoGenerateColumns = false;
+                dgvRoles.Columns[0].DataPropertyName = "IdRol";
+                dgvRoles.Columns[1].DataPropertyName = "Nombre";
+                dgvRoles.DataSource = _rolBLL.ObtenerRoles();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar la lista de roles: " + ex.Message, "Error de Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            FrmMenuAdministracion menu = new FrmMenuAdministracion();
+            menu.Show();
+            this.Close();
+        }
+
         private void FrmRoles_Load(object sender, EventArgs e)
         {
             CargarDatos();

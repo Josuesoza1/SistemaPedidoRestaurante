@@ -22,6 +22,9 @@ namespace SistemaPedidoRestaurante.BLL
             return usuarioLogin;
         }
 
+        
+
+
         public Usuarios ObtenerTodosLosUsuarios()
         {
             return _usuarioDAL.Listar();

@@ -8,8 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaPedidoRestaurante.UIAdministracion;
-using SistemaPedidoRestaurante.UICliente;
-
 
 namespace SistemaPedidoRestaurante.UIAdministracion
 {
@@ -19,48 +17,42 @@ namespace SistemaPedidoRestaurante.UIAdministracion
         {
             InitializeComponent();
         }
-
-        private void lblTitulo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCategorias_Click(object sender, EventArgs e)
+        private void categoríasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmCategoria categoria = new FrmCategoria();
-
             categoria.Show();
             this.Hide();
-
         }
 
-        private void btnProductos_Click(object sender, EventArgs e)
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmProducto productos= new FrmProducto();
-            productos.Show();
+            FrmProducto producto = new FrmProducto();
+            producto.Show();
             this.Hide();
         }
 
-        private void btnRoles_Click(object sender, EventArgs e)
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmRoles roles = new FrmRoles();
-            roles.Show();
-            this.Hide();
-        }
-
-        private void btnEmpleados_Click(object sender, EventArgs e)
-        {
-            FrmEmpleado empleados = new FrmEmpleado();
+            FrmEmpleados empleados = new FrmEmpleados();
             empleados.Show();
             this.Hide();
         }
 
-        private void FrmMenuAdministracion_FormClosed(object sender, FormClosedEventArgs e)
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void rolesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            {
+                FrmRoles roles = new FrmRoles();
+                roles.Show();
+                this.Hide();
+            }
+        }
+
+        private void FrmMenuAdministracion_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }

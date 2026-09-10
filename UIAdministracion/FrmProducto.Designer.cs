@@ -36,7 +36,7 @@
             this.lblBuscar = new System.Windows.Forms.Label();
             this.cmbBuscar = new System.Windows.Forms.ComboBox();
             this.grpListadoCliente = new System.Windows.Forms.GroupBox();
-            this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColPnombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColSnombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,6 +44,7 @@
             this.ColSapellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Colcedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpAcciones = new System.Windows.Forms.GroupBox();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -62,7 +63,7 @@
             this.pnlEncabezado.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.grpListadoCliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.grpAcciones.SuspendLayout();
             this.grpDatosClientes.SuspendLayout();
             this.SuspendLayout();
@@ -73,7 +74,7 @@
             this.pnlEncabezado.Controls.Add(this.lblTitulo);
             this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEncabezado.Location = new System.Drawing.Point(0, 0);
-            this.pnlEncabezado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEncabezado.Margin = new System.Windows.Forms.Padding(4);
             this.pnlEncabezado.Name = "pnlEncabezado";
             this.pnlEncabezado.Size = new System.Drawing.Size(976, 86);
             this.pnlEncabezado.TabIndex = 3;
@@ -83,13 +84,12 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(43, 24);
+            this.lblTitulo.Location = new System.Drawing.Point(43, 25);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(398, 35);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "GESTIÓN DE PRODUCTOS";
-            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // groupBox2
             // 
@@ -99,17 +99,17 @@
             this.groupBox2.Controls.Add(this.lblBuscar);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox2.Location = new System.Drawing.Point(24, 356);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(531, 52);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             // 
             // txtTextoBuscar
             // 
-            this.txtTextoBuscar.Location = new System.Drawing.Point(113, 18);
-            this.txtTextoBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTextoBuscar.Location = new System.Drawing.Point(114, 18);
+            this.txtTextoBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtTextoBuscar.Name = "txtTextoBuscar";
             this.txtTextoBuscar.Size = new System.Drawing.Size(203, 22);
             this.txtTextoBuscar.TabIndex = 9;
@@ -117,14 +117,14 @@
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btnBuscar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.Blue;
-            this.btnBuscar.Location = new System.Drawing.Point(336, 8);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.Location = new System.Drawing.Point(336, 7);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(119, 38);
             this.btnBuscar.TabIndex = 8;
-            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Text = "⌕";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // lblBuscar
@@ -143,41 +143,41 @@
             // 
             this.cmbBuscar.FormattingEnabled = true;
             this.cmbBuscar.Location = new System.Drawing.Point(131, 41);
-            this.cmbBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.cmbBuscar.Name = "cmbBuscar";
             this.cmbBuscar.Size = new System.Drawing.Size(185, 24);
             this.cmbBuscar.TabIndex = 7;
             // 
             // grpListadoCliente
             // 
-            this.grpListadoCliente.Controls.Add(this.dgvClientes);
+            this.grpListadoCliente.Controls.Add(this.dgvProductos);
             this.grpListadoCliente.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.grpListadoCliente.Location = new System.Drawing.Point(24, 415);
-            this.grpListadoCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpListadoCliente.Location = new System.Drawing.Point(24, 414);
+            this.grpListadoCliente.Margin = new System.Windows.Forms.Padding(4);
             this.grpListadoCliente.Name = "grpListadoCliente";
-            this.grpListadoCliente.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpListadoCliente.Padding = new System.Windows.Forms.Padding(4);
             this.grpListadoCliente.Size = new System.Drawing.Size(928, 150);
             this.grpListadoCliente.TabIndex = 7;
             this.grpListadoCliente.TabStop = false;
             this.grpListadoCliente.Text = "Listado de Productos";
             // 
-            // dgvClientes
+            // dgvProductos
             // 
-            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColID,
             this.ColPnombre,
             this.ColSnombre,
             this.ColPapellido,
             this.ColSapellido,
             this.Colcedula});
-            this.dgvClientes.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvClientes.Location = new System.Drawing.Point(29, 23);
-            this.dgvClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dgvClientes.Name = "dgvClientes";
-            this.dgvClientes.RowHeadersWidth = 62;
-            this.dgvClientes.Size = new System.Drawing.Size(857, 119);
-            this.dgvClientes.TabIndex = 0;
+            this.dgvProductos.GridColor = System.Drawing.SystemColors.AppWorkspace;
+            this.dgvProductos.Location = new System.Drawing.Point(29, 23);
+            this.dgvProductos.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvProductos.Name = "dgvProductos";
+            this.dgvProductos.RowHeadersWidth = 62;
+            this.dgvProductos.Size = new System.Drawing.Size(857, 119);
+            this.dgvProductos.TabIndex = 0;
             // 
             // ColID
             // 
@@ -223,6 +223,7 @@
             // 
             // grpAcciones
             // 
+            this.grpAcciones.Controls.Add(this.btnVolver);
             this.grpAcciones.Controls.Add(this.btnEliminar);
             this.grpAcciones.Controls.Add(this.btnEditar);
             this.grpAcciones.Controls.Add(this.btnNuevo);
@@ -230,21 +231,36 @@
             this.grpAcciones.Controls.Add(this.btnGuardar);
             this.grpAcciones.ForeColor = System.Drawing.Color.Green;
             this.grpAcciones.Location = new System.Drawing.Point(596, 107);
-            this.grpAcciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpAcciones.Margin = new System.Windows.Forms.Padding(4);
             this.grpAcciones.Name = "grpAcciones";
-            this.grpAcciones.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpAcciones.Padding = new System.Windows.Forms.Padding(4);
             this.grpAcciones.Size = new System.Drawing.Size(356, 210);
             this.grpAcciones.TabIndex = 6;
             this.grpAcciones.TabStop = false;
             this.grpAcciones.Text = "Acciones";
             // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolver.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnVolver.ForeColor = System.Drawing.Color.Black;
+            this.btnVolver.Location = new System.Drawing.Point(194, 150);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(99, 38);
+            this.btnVolver.TabIndex = 8;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.LightCoral;
             this.btnEliminar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.Red;
+            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
             this.btnEliminar.Location = new System.Drawing.Point(194, 85);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(99, 48);
             this.btnEliminar.TabIndex = 7;
@@ -255,9 +271,9 @@
             // 
             this.btnEditar.BackColor = System.Drawing.Color.NavajoWhite;
             this.btnEditar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.Olive;
+            this.btnEditar.ForeColor = System.Drawing.Color.Black;
             this.btnEditar.Location = new System.Drawing.Point(62, 85);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(99, 48);
             this.btnEditar.TabIndex = 6;
@@ -268,9 +284,9 @@
             // 
             this.btnNuevo.BackColor = System.Drawing.Color.Plum;
             this.btnNuevo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.ForeColor = System.Drawing.Color.Purple;
+            this.btnNuevo.ForeColor = System.Drawing.Color.Black;
             this.btnNuevo.Location = new System.Drawing.Point(62, 27);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(99, 48);
             this.btnNuevo.TabIndex = 5;
@@ -281,11 +297,11 @@
             // 
             this.btnLimpiar.BackColor = System.Drawing.Color.Aquamarine;
             this.btnLimpiar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.Color.DarkCyan;
+            this.btnLimpiar.ForeColor = System.Drawing.Color.Black;
             this.btnLimpiar.Location = new System.Drawing.Point(62, 148);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(211, 44);
+            this.btnLimpiar.Size = new System.Drawing.Size(99, 44);
             this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -294,9 +310,9 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Location = new System.Drawing.Point(194, 27);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(99, 48);
             this.btnGuardar.TabIndex = 1;
@@ -318,10 +334,10 @@
             this.grpDatosClientes.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDatosClientes.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.grpDatosClientes.Location = new System.Drawing.Point(24, 107);
-            this.grpDatosClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpDatosClientes.Margin = new System.Windows.Forms.Padding(4);
             this.grpDatosClientes.Name = "grpDatosClientes";
-            this.grpDatosClientes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grpDatosClientes.Size = new System.Drawing.Size(531, 241);
+            this.grpDatosClientes.Padding = new System.Windows.Forms.Padding(4);
+            this.grpDatosClientes.Size = new System.Drawing.Size(531, 242);
             this.grpDatosClientes.TabIndex = 5;
             this.grpDatosClientes.TabStop = false;
             this.grpDatosClientes.Text = "Datos del Producto";
@@ -329,7 +345,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(135, 205);
+            this.checkBox1.Location = new System.Drawing.Point(135, 204);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
@@ -340,7 +356,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(43, 205);
+            this.label1.Location = new System.Drawing.Point(43, 204);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 16);
@@ -349,24 +365,24 @@
             // 
             // txtSnombre
             // 
-            this.txtSnombre.Location = new System.Drawing.Point(118, 79);
-            this.txtSnombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSnombre.Location = new System.Drawing.Point(119, 78);
+            this.txtSnombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtSnombre.Name = "txtSnombre";
             this.txtSnombre.Size = new System.Drawing.Size(198, 23);
             this.txtSnombre.TabIndex = 12;
             // 
             // txtSapellido
             // 
-            this.txtSapellido.Location = new System.Drawing.Point(113, 160);
-            this.txtSapellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSapellido.Location = new System.Drawing.Point(114, 160);
+            this.txtSapellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtSapellido.Name = "txtSapellido";
             this.txtSapellido.Size = new System.Drawing.Size(203, 23);
             this.txtSapellido.TabIndex = 10;
             // 
             // txtPapellido
             // 
-            this.txtPapellido.Location = new System.Drawing.Point(108, 120);
-            this.txtPapellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPapellido.Location = new System.Drawing.Point(108, 121);
+            this.txtPapellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtPapellido.Name = "txtPapellido";
             this.txtPapellido.Size = new System.Drawing.Size(208, 23);
             this.txtPapellido.TabIndex = 9;
@@ -414,7 +430,6 @@
             this.lblPnombre.Size = new System.Drawing.Size(79, 16);
             this.lblPnombre.TabIndex = 0;
             this.lblPnombre.Text = "Categoría:";
-            this.lblPnombre.Click += new System.EventHandler(this.lblPnombre_Click);
             // 
             // FrmProducto
             // 
@@ -429,14 +444,14 @@
             this.Controls.Add(this.pnlEncabezado);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmProducto";
-            this.Text = "FrmProducto";
+            this.Text = "Gestión de Productos";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmProducto_FormClosed);
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlEncabezado.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.grpListadoCliente.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.grpAcciones.ResumeLayout(false);
             this.grpDatosClientes.ResumeLayout(false);
             this.grpDatosClientes.PerformLayout();
@@ -454,7 +469,7 @@
         private System.Windows.Forms.ComboBox cmbBuscar;
         private System.Windows.Forms.Label lblBuscar;
         private System.Windows.Forms.GroupBox grpListadoCliente;
-        private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.GroupBox grpAcciones;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
@@ -477,5 +492,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPapellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColSapellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn Colcedula;
+        private System.Windows.Forms.Button btnVolver;
     }
 }
